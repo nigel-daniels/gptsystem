@@ -1,0 +1,156 @@
+Large Language Models (LLMs)
+----------------------------
+Text generation:
+I love eating...	bagels with cream cheese.
+ 					my mothers meatloaf.
+					out with friends.
+-------------		-------------------------
+	prompt				most likely answers
+
+How does the system know the most likely answers?
+
+
+Supervised learning (x->y)
+--------------------------
+Restaurant reviews sentiment classification:
+
+			input x						| output y
+----------------------------------------|---------
+The pastramis sandwich was great		| Positive
+Service was slow and the food was so-so.| Negative
+The earl grey tea was fantastic.		| Positive
+...										|
+
+Get labeled data > Train AI model on data > Deploy & call model
+
+Best pizza I ever had!					| Positive
+
+
+Supervised learning for LLMs
+----------------------------
+A language model is built by using supervised learning (x->y)
+to repeatedly predict the next word.
+
+"My favorite food is a bagel with cream cheese and lox."
+
+becomes a sequence of training examples:
+
+			input x						| output y
+----------------------------------------|---------
+My favorite food is a					| bagel
+My favorite food is a bagel				| with
+My favorite food is a bagel with		| cream
+...										|
+
+This can be used to build a massive training set.
+
+
+Two types of LLMs
+-----------------
+Base LLM
+Predicts next word, based on text training data.
+
+"Once upon a time, there was a unicorn..."
+-> "...that lived in  magical forest with all her unicorn friends."
+
+Problems can arise as the training is general e.g.
+
+"What is the capital of France?"
+-> "What is Frances largest city?
+	What is Frances population?
+	What is the currency of France?"
+
+This is likely as the prompt is often found in lists of questions.
+What was really wanted was the answer to the question.
+
+Instruction Tuned LLM
+An LLM that has been trained more to follow instructions.
+"What is the capital of France?"
+-> "Paris"
+
+
+Getting from a Base LLM to an instruction tuned LLM
+---------------------------------------------------
+1. Train a base LLM on a LOT of data. 100s of billions of words
+2. Further train the model:
+	- Fine-tune on examples where the output follows and input instruction.
+	  This can take months and require a lot of supercomputer time.
+	- Obtain human-ratings of the quality of different LLM outputs,
+	  on criteria such as whether it is helpful, honest and harmless.
+	- Tune LLM to increase probability that it generates the more highly rated
+	  outputs using Reinforcement Learning from Human Feedback (RLHF).
+	- This can be done in days on a smaller data set.
+
+[ Try prompt 1 & 2]
+
+
+Tokens
+------
+Learning   new   things   is   fun  !
+--------  ----  -------  ---  ----  -
+    1       2      3      4     5   6
+
+6 Tokens
+
+The LLM is predicting the next token, so it is looking for a sequence of
+characters to form a token. However with less common words in the English
+language the commonly occurring sequences may breakdown differently:
+
+Prom pt ing   is  a  powerful  developer  tool .
+---- -- ---  --- -- --------- ---------- ----- -
+
+Here the word prompting is split into prom, pt &  ing as these pattern
+sequences are more commonly occurring.
+
+If we give it the word lollipop the system 'sees' tokens:
+
+l oll ipop
+_ ___ ____
+
+So at times we need to force the tokenizer to do what we need.
+
+[ Try prompt 3]
+
+For English language input, 1 token is around 4 characters, or .75 of a word.
+
+Token Limits
+- Different models have different limits on the number of
+  tokens in the input context + output completion.
+- gtp3.5-turbo ~4,000 tokens.
+
+
+System, User and Assistant Messages
+-----------------------------------
+messages = [
+	{'role': 'system', 'content': 'You are an assistant who...'},
+	{'role': 'user', 'content': 'Tell me a joke'},
+	{'role': 'assistant', 'content': 'Why did the chicken...'}
+]
+
+		System			Sets the behavior of an assistant.
+		  |
+		  \/
+		assistant		Chat model
+		 |   /\
+		 \/  |
+		  user			You
+
+[ Try messages 1 - 4]
+
+Prompt Engineering Revolutionizing AI application development
+-------------------------------------------------------------
+
+Supervised learning
+
+Get labeled data \ Train model on data \ Deploy and call model
+     1 month     /       3 months      /       3 months
+
+
+Prompt-based AI
+
+Specify prompt \ Call model
+   mins/hrs    /  mins/hrs
+
+
+Generally this is applicable to unstructured data,
+not so applicable to structured data

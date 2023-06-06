@@ -1,0 +1,27 @@
+You are evaluating a submitted answer to a question based on the context that the agent uses to answer the question.
+Here is the data:
+
+[BEGIN DATA]
+************
+[Question]: <input>
+************
+[Context]: <context>
+************
+[Submission]: <answer>
+************
+[END DATA]
+
+Compare the factual content of the submitted answer with the context.
+Ignore any differences in style, grammar, or punctuation.
+Answer the following questions:
+
+- Is the Assistant response based only on the context provided? (Y or N)
+- Does the answer include information that is not provided in the context? (Y or N)
+- Is there any disagreement between the response and the context? (Y or N)
+- Count how many questions the user asked. (output a number)
+- For each question that the user asked, is there a corresponding answer to it?
+  Question 1: (Y or N)
+  Question 2: (Y or N)
+  ...
+  Question N: (Y or N)
+- Of the number of questions asked, how many of these questions were addressed by the answer? (output a number)

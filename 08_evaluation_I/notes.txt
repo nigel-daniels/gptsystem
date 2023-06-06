@@ -1,0 +1,27 @@
+Building an application
+-----------------------
+
+Supervised learning
+
+Get labeled data \ Train model on data \ Deploy and call model
+     1 month     /       3 months      /       3 months
+
+
+Prompt-based AI
+
+Specify prompt \ Call model
+   mins/hrs    /  mins/hrs
+
+
+In prompt engineering things go faster so taking time to build out test sets
+is an extra load on the development time, hence test sets tend to be built
+incrementally.
+
+- Tune prompts on a handful of examples. (a handful of prompts)
+- Add additional 'tricky' examples opportunistically.
+- Develop metrics to measure performance on examples. E.g. ave. accuracy
+- Collect randomly sampled sets of examples to tune to. (Only if the previous did not work or fidelity is low)
+ 	(development set/hold-out cross validation set) [This can take accuracy from 90% further]
+- Collect and use a hold-out set. [Only for high-risk such as bias or harm]
+
+The code examples look at the first three steps and looks at quantitative testing.

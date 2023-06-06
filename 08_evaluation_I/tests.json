@@ -1,0 +1,124 @@
+[
+  {
+    "input": "Which TV can I buy if I'm on a budget?",
+    "expected": {
+      "Televisions and Home Theater Systems": [
+        "CineView 4K TV",
+        "SoundMax Home Theater",
+        "CineView 8K TV",
+        "SoundMax Soundbar",
+        "CineView OLED TV"
+      ]
+    }
+  },
+  {
+    "input": "I need a charger for my smartphone",
+    "expected": {
+      "Smartphones and Accessories": [
+        "MobiTech PowerCase",
+        "MobiTech Wireless Charger",
+        "SmartX EarBuds"
+      ]
+    }
+  },
+  {
+    "input": "What computers do you have?",
+    "expected": {
+      "Computers and Laptops": [
+        "TechPro Ultrabook",
+        "BlueWave Gaming Laptop",
+        "PowerLite Convertible",
+        "TechPro Desktop",
+        "BlueWave Chromebook"
+      ]
+    }
+  },
+  {
+    "input": "tell me about the smartx pro phone and the fotosnap camera, the dslr one.Also, what TVs do you have?",
+    "expected": {
+      "Smartphones and Accessories": [
+        "SmartX ProPhone"
+      ],
+      "Cameras and Camcorders": [
+        "FotoSnap DSLR Camera"
+      ],
+      "Televisions and Home Theater Systems": [
+        "CineView 4K TV",
+        "SoundMax Home Theater",
+        "CineView 8K TV",
+        "SoundMax Soundbar",
+        "CineView OLED TV"
+      ]
+    }
+  },
+  {
+    "input": "tell me about the CineView TV, the 8K one, Gamesphere console, the X one. I'm on a budget, what computers do you have?",
+    "expected": {
+      "Televisions and Home Theater Systems": [
+        "CineView 8K TV"
+      ],
+      "Gaming Consoles and Accessories": [
+        "GameSphere X"
+      ],
+      "Computers and Laptops": [
+        "TechPro Ultrabook",
+        "BlueWave Gaming Laptop",
+        "PowerLite Convertible",
+        "TechPro Desktop",
+        "BlueWave Chromebook"
+      ]
+    }
+  },
+  {
+    "input": "What smartphones do you have?",
+    "expected": {
+      "Smartphones and Accessories": [
+        "SmartX ProPhone",
+        "MobiTech PowerCase",
+        "SmartX MiniPhone",
+        "MobiTech Wireless Charger",
+        "SmartX EarBuds"
+      ]
+    }
+  },
+  {
+    "input": "I'm on a budget.  Can you recommend some smartphones to me?",
+    "expected": {
+      "Smartphones and Accessories": [
+        "SmartX EarBuds",
+        "SmartX MiniPhone",
+        "MobiTech PowerCase",
+        "SmartX ProPhone",
+        "MobiTech Wireless Charger"
+      ]
+    }
+  },
+  {
+    "input": "What Gaming consoles would be good for my friend who is into racing games?",
+    "expected": {
+      "Gaming Consoles and Accessories": [
+        "GameSphere X",
+        "ProGamer Controller",
+        "GameSphere Y",
+        "ProGamer Racing Wheel",
+        "GameSphere VR Headset"
+      ]
+    }
+  },
+  {
+    "input": "What could be a good present for my videographer friend?",
+    "expected": {
+      "Cameras and Camcorders": [
+        "FotoSnap DSLR Camera",
+        "ActionCam 4K",
+        "FotoSnap Mirrorless Camera",
+        "ZoomMaster Camcorder",
+        "FotoSnap Instant Camera"
+      ]
+    }
+  },
+  {
+    "input": "I would like a hot tub time machine.",
+    "expected": []
+  }
+]

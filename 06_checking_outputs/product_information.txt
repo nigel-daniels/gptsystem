@@ -1,0 +1,112 @@
+{
+	"name": "SmartX ProPhone",
+	"category": "Smartphones and Accessories",
+	"brand": "SmartX",
+	"model_number": "SX-PP10",
+	"warranty": "1 year",
+	"rating": 4.6,
+	"features": [
+		"6.1-inch display",
+		"128GB storage",
+		"12MP dual camera",
+		"5G"
+	],
+	"description": "A powerful smartphone with advanced camera features.",
+	"price": 899.99
+},
+{
+	"name": "FotoSnap DSLR Camera",
+	"category": "Cameras and Camcorders",
+	"brand": "FotoSnap",
+	"model_number": "FS-DSLR200",
+	"warranty": "1 year",
+	"rating": 4.7,
+	"features": [
+		"24.2MP sensor",
+		"1080p video",
+		"3-inch LCD",
+		"Interchangeable lenses"
+	],
+	"description": "Capture stunning photos and videos with this versatile DSLR camera.",
+	"price": 599.99
+},
+{
+	"name": "CineView 4K TV",
+	"category": "Televisions and Home Theater Systems",
+	"brand": "CineView",
+	"model_number": "CV-4K55",
+	"warranty": "2 years",
+	"rating": 4.8,
+	"features": [
+		"55-inch display",
+		"4K resolution",
+		"HDR",
+		"Smart TV"
+	],
+	"description": "A stunning 4K TV with vibrant colors and smart features.",
+	"price": 599.99
+},
+{
+	"name": "SoundMax Home Theater",
+	"category": "Televisions and Home Theater Systems",
+	"brand": "SoundMax",
+	"model_number": "SM-HT100",
+	"warranty": "1 year",
+	"rating": 4.4,
+	"features": [
+		"5.1 channel",
+		"1000W output",
+		"Wireless subwoofer",
+		"Bluetooth"
+	],
+	"description": "A powerful home theater system for an immersive audio experience.",
+	"price": 399.99
+},
+{
+	"name": "CineView 8K TV",
+	"category": "Televisions and Home Theater Systems",
+	"brand": "CineView",
+	"model_number": "CV-8K65",
+	"warranty": "2 years",
+	"rating": 4.9,
+	"features": [
+		"65-inch display",
+		"8K resolution",
+		"HDR",
+		"Smart TV"
+	],
+	"description": "Experience the future of television with this stunning 8K TV.",
+	"price": 2999.99
+},
+{
+	"name": "SoundMax Soundbar",
+	"category": "Televisions and Home Theater Systems",
+	"brand": "SoundMax",
+	"model_number": "SM-SB50",
+	"warranty": "1 year",
+	"rating": 4.3,
+	"features": [
+		"2.1 channel",
+		"300W output",
+		"Wireless subwoofer",
+		"Bluetooth"
+	],
+	"description": "Upgrade your TV's audio with this sleek and powerful soundbar.",
+	"price": 199.99
+},
+{
+	"name": "CineView OLED TV",
+	"category": "Televisions and Home Theater Systems",
+	"brand": "CineView",
+	"model_number": "CV-OLED55",
+	"warranty": "2 years",
+	"rating": 4.7,
+	"features": [
+		"55-inch display",
+		"4K resolution",
+		"HDR",
+		"Smart TV"
+	],
+	"description": "Experience true blacks and vibrant colors with this OLED TV.",
+	"price": 1499.99
+}
